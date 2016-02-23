@@ -1,5 +1,5 @@
 //
-//  AppDelegate.h
+//  XMGStatusCell.h
 //  15-自定义不等高的cell-storyboard有配图(iOS8之后)
 //
 //  Created by apple on 16/2/23.
@@ -7,11 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+@class XMGStatus;
+@interface XMGStatusCell : UITableViewCell
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
-
-@property (strong, nonatomic) UIWindow *window;
-
+/** 微博模型*/
+@property (nonatomic ,strong) XMGStatus *status;
 
 @end
-
